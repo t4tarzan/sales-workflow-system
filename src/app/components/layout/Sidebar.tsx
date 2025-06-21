@@ -4,13 +4,17 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 
 const navigation = [
-  { name: 'Dashboard', href: '/dashboard' },
-  { name: 'New Request', href: '/requests/new' },
-  { name: 'My Requests', href: '/requests/my' },
-  { name: 'Approvals', href: '/approvals' },
-  { name: 'Purchase Orders', href: '/purchase-orders' },
-  { name: 'Quality Control', href: '/quality-control' },
-  { name: 'Finance', href: '/finance' },
+  { name: 'Dashboard', href: '/' },
+  { name: 'Indent Raised', href: '/stages/indent' },
+  { name: 'PMO/QSM Approval', href: '/stages/approval' },
+  { name: 'Purchase Order', href: '/stages/po' },
+  { name: 'Vendor Confirmation', href: '/stages/vendor-confirm' },
+  { name: 'Quality Check', href: '/stages/quality-check' },
+  { name: 'Goods Receipt Note', href: '/stages/grn' },
+  { name: 'Invoice Submission', href: '/stages/invoice-submission' },
+  { name: 'Accounts Verification', href: '/stages/accounts-verification' },
+  { name: 'Payment Processing', href: '/stages/payment-processing' },
+  { name: 'Document Archiving', href: '/stages/document-archiving' },
 ];
 
 export default function Sidebar() {
